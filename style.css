@@ -1,0 +1,252 @@
+/*
+ * Faith4ng's Custom Trilium Theme
+ * This is a custom theme created by Faith4ng, inspired by the serene aesthetics of the Sanctum theme.
+ * You can activate this theme by navigating to the "Appearance" section in the options menu (top-right corner).
+ * 
+ * For more details on theming, please refer to the documentation: https://github.com/Faith4ng/Trilium-theme
+*/
+ :root {
+    
+    /* FONT */
+    
+    --main-font-family: 'YaHei Consolas Hybrid';
+    --main-font-size: normal;
+
+    --tree-font-family: 'YaHei Consolas Hybrid';
+    --tree-font-size: normal;
+
+    --detail-font-family: 'YaHei Consolas Hybrid';
+    --detail-font-size: 100%;
+
+    --monospace-font-family: 'YaHei Consolas Hybrid';
+    --monospace-font-size: normal;
+    
+    /* COLOR DEFINE*/
+    
+    --my-color-black: #282a36; /* black   */
+    --my-color-red: #ff5555; /* red     */
+    --my-color-green: #50fa7b; /* green   */
+    --my-color-yellow: #f1fa8c; /* yellow  */
+    --my-color-blue: #bd93f9; /* blue    */
+    --my-color-magenta: #ff79c6; /* magenta */
+    --my-color-cyan: #8be9fd; /* cyan    */
+    --my-color-white: #f8f8f2; /* white   */
+    
+    --my-background-color-old: #eee8d5;
+    --my-background-color: #f4f4f0;
+    
+    /* COLOR SETTING */
+    
+    --main-background-color: var(--my-background-color); 
+    --main-text-color: var(--my-color-black);
+    --main-border-color: #AFB8C6;
+    
+    --accented-background-color: #dcd0c0;
+    /* --more-accented-background-color: #eee8d5; */
+    
+    --button-text-color: #44475a;
+    --button-background-color: var(--my-background-color);
+    --button-disabled-text-color: var(--my-background-color);
+    --button-disabled-background-color: var(--my-background-color);
+    --button-border-color: var(--my-background-color);
+    --button-border-radius: 8px;
+    
+    --primary-button-background-color: #6c757d;
+    --primary-button-text-color: white;
+    --primary-button-border-color: #6c757d;
+    
+    --muted-text-color: #86919F;
+    
+    --input-text-color: var(--my-color-black);
+    --input-background-color: #404552;
+    
+    --hover-item-text-color: white;
+    --hover-item-background-color: var(--my-background-color);
+    
+    --active-item-text-color: white;
+    --active-item-background-color: #4877B1;
+    
+    --menu-text-color: var(--my-color-black);
+    --menu-background-color: var(--my-background-color);
+    
+    --modal-background-color: #404552;
+    --modal-backdrop-color: black;
+    
+    --left-pane-background-color: var(--my-background-color);
+    --left-pane-text-color: var(--my-color-black);
+    
+    --launcher-pane-background-color: var(--my-background-color);
+    --launcher-pane-text-color: var(--my-color-magent);
+    
+    /*
+    --active-tab-background-color: #2F343F;
+    --active-tab-text-color: #AFB8C6;
+    
+    --inactive-tab-background-color: #404552;
+    --inactive-tab-text-color: #AFB8C6;
+    */
+    
+    --scrollbar-border-color: rgba(175, 184, 198, 0.5);
+    --tooltip-background-color: var(--my-background-color);
+    
+    --link-color: lightskyblue;
+}
+
+
+
+/*文件树*/
+body .fancytree-node {
+    height: 32px;
+    padding: 2px; 
+}
+
+/*有序排列*/
+ol {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.card-body ol{
+    margin-top: initial;
+    margin-bottom: initial;
+}
+
+/*无序排列*/
+ul {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+    padding-left: 24px;
+}
+
+.ui-fancytree ul{
+  margin-top: initial;
+  margin-bottom: initial;
+} 
+
+/*列表环境*/
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    /*
+    padding-top: 1.2px;
+    padding-bottom;1.2px;
+    */
+}
+
+/*公式环境(normal)*/
+.katex {
+    font-size: 1em;
+}
+/*公式环境(display)*/
+.katex-display>.katex {
+    font-size: 1.2em;
+}
+
+span.katex-html {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/*段落环境*/
+p {
+    line-height: 1.5em;
+    
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/*二级标题*/
+h2 {
+    font-size: 2em !important;
+    font-weight: normal !important;
+    
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+body.heading-style-underline .note-detail-editable-text h2 {
+    border-bottom: 0pt dashed var(--main-border-color) !important;
+    /* border-bottom-color: ;
+    border-bottom-style: ;
+    border-bottom-width: ; */
+    
+    border-top: 0pt dashed var(--main-border-color) !important;
+    /* border-top-color: ;
+    border-top-style: ;
+    border-top-width: ; */
+}
+
+/*三级标题*/
+h3 {
+    font-size: 1.5em !important;
+    font-weight: normal !important;
+    
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+body.heading-style-underline .note-detail-editable-text h3 {
+    border-bottom: 0pt dashed var(--main-border-color) !important;
+    /* border-bottom-color: ;
+    border-bottom-style: ;
+    border-bottom-width: ; */
+    
+    border-top: 0pt dashed var(--main-border-color) !important;
+    /* border-top-color: ;
+    border-top-style: ;
+    border-top-width: ; */
+}
+
+/*四级标题*/
+h4 {
+    font-size: 1.2em !important;
+    font-weight: normal !important;
+    
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+body.heading-style-underline .note-detail-editable-text h4 {
+    border-bottom: 0pt dashed var(--main-border-color) !important;
+    /* border-bottom-color: ;
+    border-bottom-style: ;
+    border-bottom-width: ; */
+    
+    border-top: 0pt dashed var(--main-border-color) !important;
+    /* border-top-color: ;
+    border-top-style: ;
+    border-top-width: ; */
+}
+
+span[style*="color"] {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+    border-radius: 6px;
+}
+
+code {
+    padding-top: 1.4px !important;
+    padding-bottom: 1.4px !important;
+    padding-left: 2.4px !important;
+    padding-right: 2.4px !important;
+    
+    border-radius: 4px !important;
+}
+
+code {
+    color: #EC5A76 !important;
+}
+
+a, a:visited, a:hover {
+    color: #9370DB !important;
+}
+
+.note-book-card.expanded .note-book-content p {
+    /*color: #9370DB !important;*/
+}
+
